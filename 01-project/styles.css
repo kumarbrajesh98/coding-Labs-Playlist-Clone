@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  background-color: rgb(216, 216, 214);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 580px;
+  width: 550px;
+  max-width: 550px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, rgb(88, 88, 207) 33%, white 30%);
+  border-radius: 30px;
+  flex-shrink: 0;
+}
+
+.img-div {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 172px;
+  top: 30px;
+  border-radius: 50%;
+  border-style: none;
+  padding: 2px;
+  border: 3px solid rgb(88, 88, 207);
+}
+
+.img-div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.content {
+  position: absolute;
+  top: 240px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+  flex: 1.5;
+  font-family: "Poppins", serif;
+  font-size: 27px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.second {
+  flex: 1.5;
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-size: 18.5px;
+  font-weight: 350;
+  font-style: normal;
+  text-align: center;
+}
+
+.third {
+  flex: 2.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.third div img {
+  height: 70px;
+  width: 70px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.forth {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.leftbtn {
+  height: 50px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftbtn button {
+
+  color: white;
+  background-color: rgb(88, 88, 207);
+  border-style: none;
+  border-radius: 30px;
+  height: 90%;
+  width: 80%;
+}
+
+.rightbtn {
+  height: 50px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightbtn button {
+  color: white;
+  background-color: rgb(88, 88, 207);
+  border-style: none;
+  border-radius: 30px;
+  height: 90%;
+  width: 80%;
+}
+
+.fifth {
+  flex: 0.1;
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  width: 100px;
+  position: relative;
+  border-right: 3px solid rgb(70, 63, 63);
+}
+
+.middle {
+  width: 100px;
+  position: relative;
+  border-right: 3px solid rgb(100, 72, 72);
+}
+
+.right {
+  width: 100px;
+  position: relative;
+}
+
+.heart {
+  margin-left: 5px;
+  margin-top: 7px;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+}
+
+.message {
+  padding: 2px;
+  margin-left: 10px;
+  margin-top: 12px;
+  width: 30px;
+  height: 23px;
+  display: inline-block;
+}
+
+.forward {
+  margin-left: 10px;
+  margin-top: 14px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.forward img,
+.heart img,
+.message img {
+  width: 100%;
+  height: 100%;
+}
+
+.fifth div p {
+  margin-top: -5px;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  font-family: "Poppins", serif;
+  font-weight: 350;
+  font-style: normal;
+}
