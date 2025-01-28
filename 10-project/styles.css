@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+.parent {
+  height: 100vh;
+  width: 100vw;
+  background-color: #D9D4F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 50%;
+  width: 55%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.upper {
+  flex: 0.2;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 30px;
+  padding-left: 40px;
+  position: relative;
+  bottom: 0;
+}
+
+.upper div {
+  position: absolute;
+  bottom: 0;
+}
+
+.lower {
+  flex: 0.8;
+  border-radius: 10px;
+  display: flex;
+}
+
+.left {
+  padding-top: 20px;
+  flex: 0.23;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card input[type=radio] {
+  display: none;
+}
+
+.left label {
+  width: 70%;
+  height: 13%;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-style: none;
+  outline: none;
+  border-radius: 10px;
+  transition: background-color 0.2s, color 0.4s;
+  cursor: pointer;
+}
+
+.left label:hover {
+  color: blue;
+}
+
+#Home:checked~.lower .left .one,
+#Blog:checked~.lower .left .two,
+#Help:checked~.lower .left .three,
+#Code:checked~.lower .left .four,
+#About:checked~.lower .left .five {
+  background-color: blueviolet;
+  color: white;
+}
+
+.right {
+  flex: 0.77;
+  padding: 40px;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+  display: none;
+}
+
+#Home:checked~.lower .right .first,
+#Blog:checked~.lower .right .second,
+#Help:checked~.lower .right .third,
+#Code:checked~.lower .right .fourth,
+#About:checked~.lower .right .fifth {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.first h1,
+.second h1,
+.third h1,
+.fourth h1,
+.fifth h1 {
+  font-weight: 500;
+}
+
+.first h5,
+.second h5,
+.third h5,
+.fourth h5,
+.fifth h5{
+  font-weight: 400;
+}
