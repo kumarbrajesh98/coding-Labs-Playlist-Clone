@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+.parent {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 55%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.top {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 200;
+  font-size: 17px;
+  background-color: #946cc4;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.middle {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.email,
+.pswd {
+  height: 80px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email input,
+.pswd input {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  border-style: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.email input:focus,
+.pswd input:focus {
+  border: 1px solid blue;
+}
+
+.email label,
+.pswd label {
+  position: absolute;
+  left: 70px;
+  transition: all 0.45s ease;
+  color: grey;
+  background: white;
+  transform: translateY(4px);
+  cursor: pointer;
+  padding: 0 2px;
+}
+
+.email input:focus+label,
+.email input:not(:placeholder-shown)+label {
+  visibility: visible;
+  top: 8.5px;
+  font-size: 14px;
+  color: #007bff;
+}
+
+.pswd input:focus+label,
+.pswd input:not(:placeholder-shown)+label {
+  visibility: visible;
+  top: 8.5px;
+  font-size: 14px;
+  color: #007bff;
+}
+
+.credentials {
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
+.credentials a,
+.bottom a {
+  text-decoration: none;
+}
+
+.credentials a:hover,
+.bottom a:hover {
+  text-decoration: underline;
+}
+
+.middle form input[type="submit"] {
+  width: 80%;
+  height: 50px;
+  border-style: none;
+  outline: none;
+  background-color: #946cc4;
+  font-size: 18px;
+  border-radius: 30px;
+  color: white;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.login input[type="submit"]:focus {
+  transform: scale(0.95);
+}
+
+.bottom {
+  flex: 0.5;
+  text-align: center;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
