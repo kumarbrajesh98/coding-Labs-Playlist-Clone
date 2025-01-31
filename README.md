@@ -1,1 +1,1 @@
-Just Providing the alternate Solutions to Coding Labs Playlist on Youtube.
+Just Providing the alternate Solutions to Coding Labs Playlist on Youtube. Just Clone the repo and use your local machine to run these projects as some projects are for dekstop only and can become unresponsive on mobile devices.
