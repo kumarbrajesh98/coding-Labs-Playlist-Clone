@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+.parent {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(48, 10, 65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child {
+  height: 75%;
+  width: 50%;
+  position: relative;
+}
+
+.up {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(circle,
+      violet 33.3%,
+      #e0aaff 66.6%,
+      white 100%);
+}
+
+.down {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom,
+      white 0%,
+      #e0aaff 33.333%,
+      violet 66.666%);
+}
+
+.card-container {
+  perspective: 1500px;
+}
+
+.card {
+  position: relative;
+  height: 350px;
+  width: 580px;
+  top: 190px;
+  left: 170px;
+  transform-style: preserve-3d;
+  transition: 0.6s;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #e74c3c;
+}
+
+.front {
+  background-color: #1abc9c;
+}
+
+.one {
+  display: flex;
+  height: 85px;
+}
+
+.one div {
+  width: 130px;
+  height: 50px;
+  padding: 0 30px;
+}
+
+.one div img {
+  height: 100%;
+  width: 100%;
+}
+
+.one .text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+}
+
+.two h5 {
+  padding: 5px 30px;
+  font-weight: 400;
+  color: white;
+}
+
+.two div {
+  font-size: 25px;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  color: white;
+}
+
+.three {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  padding: 0 30px;
+}
+
+.three .name {
+  margin-top: 30px;
+}
+
+.three div h4 {
+  font-size: 15px;
+}
+
+.three div h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.four {
+  display: flex;
+  justify-content: center;
+}
+
+.four div {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.five {
+  padding: 20px 0;
+  width: 100%;
+  height: 100px;
+}
+
+.five div {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+.six {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 80px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.six .first {
+  position: absolute;
+  width: 85%;
+  height: 50px;
+  background-color: white;
+  font-size: 20px;
+  padding-top: 10px;
+  font-style: italic;
+  border-radius: 5px;
+}
+
+.six .second {
+  position: absolute;
+  background: repeating-linear-gradient(45deg,
+      #f5f5f5,
+      #f5f5f5 10px,
+      #e0e0e0 10px,
+      #e0e0e0 20px);
+  height: 95%;
+  width: 450px;
+  left: 37px;
+  z-index: 1000;
+  border-radius: 7px;
+}
+
+.seven {
+  font-size: 12.5px;
+  font-weight: 400;
+  padding: 10px 40px;
+}
