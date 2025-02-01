@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+.parent {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  top: 12.5px;
+  left: 15px;
+  height: 40px;
+  width: 40px;
+  font-size: 35px;
+  cursor: pointer;
+  color: white;
+}
+
+.sidebar {
+  height: 100%;
+  width: 270px;
+  left: -270px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid rgba(255, 255, 255, 0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.up {
+  flex: 0.45;
+  display: flex;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.non-cross {
+  display: flex;
+  width: 80%;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cross-icon {
+  font-size: 32px;
+  color: black;
+  cursor: pointer;
+}
+
+.rotate {
+  height: 5px;
+  width: 20px;
+
+}
+
+.mid {
+  flex: 4.5;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+}
+
+.mid div {
+  position: relative;
+  padding: 10px 9px;
+
+}
+
+.mid div:hover {
+  border-top: 2.3px ridge rgba(255, 255, 255, 0.2);
+  border-bottom: 2.3px ridge rgba(255, 255, 255, 0.2);
+  border-left: 2px solid white;
+}
+
+.mid div div {
+  display: inline-block;
+}
+
+.mid div div img {
+  height: 20px;
+  width: 20px;
+}
+
+.mid div p {
+  position: absolute;
+  color: white;
+  padding-left: 10px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 7px;
+}
+
+.down {
+  position: relative;
+  flex: 1;
+}
+
+.down div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.down div div {
+  width: 10px;
+  height: 10px;
+}
+
+.down div div i {
+  width: 100%;
+  height: 100%;
+}
+
+.facebook-icon {
+  font-size: 30px;
+  color: rgb(207, 204, 204);
+}
+
+.facebook-icon:hover {
+  color: white;
+}
+
+.twitter-icon {
+  font-size: 30px;
+  color: rgb(207, 204, 204);
+}
+
+.twitter-icon:hover {
+  color: white;
+}
+
+.instagram-icon {
+  font-size: 30px;
+  color: rgb(207, 204, 204);
+}
+
+.instagram-icon:hover {
+  color: white;
+}
+
+.youtube-icon {
+  font-size: 30px;
+  color: rgb(207, 204, 204);
+}
+
+.youtube-icon:hover {
+  color: white;
+}
+
+#sidebar-toggle:checked ~ .sidebar {
+  left: 0;
+}
+
+#sidebar-toggle:checked ~ .icon {
+  opacity: 0;
+}
+
+#sidebar-toggle:checked ~ .sidebar .close-btn {
+  opacity: 1;
+}
